@@ -1,0 +1,16 @@
+{
+  "Keys": [
+    "crw", "cr2", "cr3",
+    "arw",
+    "nef",
+    "raf",
+    "dng"
+  ],
+  "MimeTypes": [
+    "image/x-canon-crw", "image/x-canon-cr2", "image/x-canon-cr3",
+    "image/x-sony-arw",
+    "image/x-nikon-nef",
+    "image/x-fuji-raf",
+    "image/x-adobe-dng"
+  ]
+}

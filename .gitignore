@@ -1,0 +1,15 @@
+*.moc
+*.o
+Makefile
+moc_*.cpp
+build
+*.user
+third-party/
+image-samples/
+
+build-mingw64/
+LibRaw/*
+pugixml/*
+rawspeed/*
+third-party/*
+example/

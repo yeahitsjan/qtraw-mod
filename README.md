@@ -9,5 +9,6 @@ Checkout ``README_qtraw.md`` for more informations about building / installing.
 ### Checklist
 
 - [x] Runs on Windows
-- [ ] Canon CR3 support
+- [x] Canon CR3 support
+
 more...

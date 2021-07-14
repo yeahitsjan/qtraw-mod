@@ -8,21 +8,15 @@ This is a fork from the [mardy/qtraw](https://github.com/mardy/qtraw) repsitory 
 
 ## Linux
 
-The QtRaw plugin depends on Qt and LibRaw. In order to build it, make sure you have the necessary development packages installed. Under Ubuntu, this can be achieved by running these commands: 
-```bash
-$ sudo apt-get install libraw-dev qtbase5-dev
-```
-for building with Qt 5, or 
-```bash
-$ sudo apt-get install libraw-dev libqt4-dev
-```
-for building with Qt 4.
-Alternatively, you can find the libraw source code at
+The QtRaw plugin depends on Qt and LibRaw. In order to build it, make sure you have the necessary development packages installed. Under Ubuntu, this can be achieved by running these commands:
+
+*So hey, its Jan here and we need to stop here! To enable CR3 support for QtRaw as implemented, we need to build Libraw by ourselves. The problem is that the Ubuntu packages are probably to old (pre CR3) and we get not output from them. So I removed the part from FMeinickes original README and just state the link to the Libraw website.*
+
 http://www.libraw.org/download
 
 Once the dependencies are set up, then clone the repository as usual with
 ```bash
-$ git clone https://github.com/FMeinicke/QtRaw.git  
+$ git clone https://github.com/yeahitsjan/qtraw-mod.git
 ```
 The following commands will build and install the plugin into your system:
 ```bash
@@ -36,7 +30,7 @@ $ sudo make install
 Unfortunately on Windows the build process is not as easy as on Linux. Therefore I tried to simplify it as much as possible. What I ended up with simplifies the build to a minimum number of steps. (If you find another easier way of building QtRaw just let me know.) 
 First of all clone the repository with
 ```cmd
-> git clone --recursive https://github.com/FMeinicke/QtRaw.git  
+> git clone --recursive https://github.com/yeahitsjan/qtraw-mod.git
 ```
 This will automatically clone the LibRaw, rawspeed, and pugixml repositories as well. After that you need to apply the patches provided in the `patches` directoy of the repository. This will apply all the changes that are necessary to build with MinGW under Windows. In the `rawspeed` directory of the repository run
 ```cmd

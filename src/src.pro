@@ -12,8 +12,8 @@ build_pass:CONFIG(debug, debug|release) {
 }
 
 unix: {
-    PKGCONFIG += \
-        libraw
+    LIBS += -L/usr/local/lib -lraw
+    INCLUDEPATH += /usr/local/include/libraw
 }
 
 HEADERS += \

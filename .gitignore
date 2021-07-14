@@ -13,3 +13,4 @@ pugixml/*
 rawspeed/*
 third-party/*
 example/
+build/*
